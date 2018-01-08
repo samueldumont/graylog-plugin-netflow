@@ -22,9 +22,9 @@
     <inceptionYear>2015</inceptionYear>
 
     <scm>
-        <connection>scm:git:git@github.com:Graylog2/graylog-plugin-netflow.git</connection>
-        <developerConnection>scm:git:git@github.com:Graylog2/graylog-plugin-netflow.git</developerConnection>
-        <url>https://github.com/Graylog2/graylog-plugin-netflow</url>
+        <connection>scm:git:git@github.com:samueldumont/graylog-plugin-netflow.git</connection>
+        <developerConnection>scm:git:git@github.com:samueldumont/graylog-plugin-netflow.git</developerConnection>
+        <url>https://github.com/samueldumont/graylog-plugin-netflow</url>
         <tag>HEAD</tag>
     </scm>
 
