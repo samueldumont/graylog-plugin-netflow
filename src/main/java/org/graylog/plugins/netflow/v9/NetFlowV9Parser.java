@@ -91,7 +91,7 @@ public class NetFlowV9Parser {
      */
     public static NetFlowV9Header parseHeader(ByteBuf bb) {
         final int version = bb.readUnsignedShort();
-        if (version != 9 || version != 10) {
+        if (version != 9 && version != 10) {
             throw new InvalidFlowVersionException(version);
         }
 
