@@ -63,7 +63,7 @@ public class NetFlowV5Parser {
      */
     private static NetFlowV5Header parseHeader(ByteBuf bb) {
         final int version = bb.readUnsignedShort();
-        if (version != 5) {
+        if (version != 5 && version != 10) {
             throw new InvalidFlowVersionException(version);
         }
 
