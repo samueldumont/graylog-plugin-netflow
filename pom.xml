@@ -8,12 +8,12 @@
     <parent>
         <groupId>org.graylog.plugins</groupId>
         <artifactId>graylog-plugin-parent</artifactId>
-        <version>2.4.1-SNAPSHOT</version>
+        <version>2.4.0</version>
         <relativePath>../graylog2-server/graylog-plugin-parent</relativePath>
     </parent>
 
     <artifactId>graylog-plugin-netflow</artifactId>
-    <version>2.4.1-SNAPSHOT</version>
+    <version>2.4.0</version>
     <packaging>jar</packaging>
 
     <name>${project.artifactId}</name>
@@ -25,7 +25,7 @@
         <connection>scm:git:git@github.com:samueldumont/graylog-plugin-netflow.git</connection>
         <developerConnection>scm:git:git@github.com:samueldumont/graylog-plugin-netflow.git</developerConnection>
         <url>https://github.com/samueldumont/graylog-plugin-netflow</url>
-        <tag>HEAD</tag>
+        <tag>2.4.0</tag>
     </scm>
 
     <properties>
@@ -38,7 +38,7 @@
         <maven.deploy.skip>true</maven.deploy.skip>
         <maven.site.skip>true</maven.site.skip>
 
-        <graylog.version>2.4.1-SNAPSHOT</graylog.version>
+        <graylog.version>2.4.0-SNAPSHOT</graylog.version>
         <graylog.plugin-dir>/usr/share/graylog-server/plugin</graylog.plugin-dir>
     </properties>
 
@@ -58,7 +58,7 @@
         <dependency>
             <groupId>org.graylog2</groupId>
             <artifactId>graylog2-server</artifactId>
-            <version>${graylog.version}</version>
+            <version>2.4.0</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
