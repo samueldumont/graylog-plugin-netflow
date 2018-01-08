@@ -117,7 +117,7 @@ public class NetFlowCodec extends AbstractCodec implements MultiMessageCodec {
             final InetSocketAddress sender = remoteAddress != null ? remoteAddress.getInetSocketAddress() : null;
 
             final byte[] payload = rawMessage.getPayload();
-            LOG.debug(javax.xml.bind.DatatypeConverter.printHexBinary(payload))
+            LOG.debug(javax.xml.bind.DatatypeConverter.printHexBinary(payload));
             if (payload.length < 3) {
                 LOG.debug("NetFlow message (source: {}) doesn't even fit the NetFlow version (size: {} bytes)",
                         sender, payload.length);
