@@ -16,6 +16,8 @@
  */
 package org.graylog.plugins.netflow.codecs;
 
+import javax.xml.bind.DatatypeConverter;
+
 import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Maps;
 import com.google.inject.assistedinject.Assisted;
@@ -115,6 +117,7 @@ public class NetFlowCodec extends AbstractCodec implements MultiMessageCodec {
             final InetSocketAddress sender = remoteAddress != null ? remoteAddress.getInetSocketAddress() : null;
 
             final byte[] payload = rawMessage.getPayload();
+            LOG.debug(javax.xml.bind.DatatypeConverter.printHexBinary(payload))
             if (payload.length < 3) {
                 LOG.debug("NetFlow message (source: {}) doesn't even fit the NetFlow version (size: {} bytes)",
                         sender, payload.length);
